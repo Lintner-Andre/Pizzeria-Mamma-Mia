@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.platzhalter {
+  height: 400vh;
+}
+
+body {
+  font-family: monospace;
+  background-color: #272727;
+  color: #fff;
+
+  --primary-color: #fc0000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.hero-subtitle {
+  color: beige;
+}
+
+.hero-button {
+  margin: 3.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  text-align: left;
+}
+
+.container-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--primary-color);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-button {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    gap: 2rem;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    gap: 3rem;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
