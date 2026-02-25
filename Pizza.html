@@ -18,11 +18,12 @@
         Mamma Mia
       </h1>
       <p class="hero-subtitle">Original italienische Küche aus der Toskana</p>
-      <a class="hero-button" href="#info">Öffnungszeiten ansehen</a>
+      <a class="hero-button button" href="#info">Öffnungszeiten ansehen</a>
     </section>
-    <section id="about" class="container">
-      <h2 class="container-title">Über uns</h2>
+    <section id="about" class="about container">
       <div class="text">
+        <h2 class="container-title">Über uns</h2>
+
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -38,16 +39,67 @@
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </p>
+        <a href="#menu" class="about-button button">Speisekarte</a>
       </div>
-      <div>
-        <a href="#menu" id="menu-button" class="hero-button">Speisekarte</a>
-      </div>
-      <div class="about-image">
-        <img src="about-1.jpg" id="pic1" alt="Restaurant von aussen" />
-        <img src="about-2.jpg" class="pic" alt="Gäste" />
-        <img src="about-3.jpg" class="pic" alt="Speise" />
+      <div class="about-images">
+        <img
+          src="about-1.jpg"
+          alt="aussen anicht"
+          class="about-image about-image-large"
+        />
+        <div class="about-images-small">
+          <img src="about-2.jpg" alt="gäste" class="about-image" />
+          <img src="about-3.jpg" alt="speise" class="about-image" />
+        </div>
       </div>
     </section>
-    <div class="platzhalter"></div>
+    <section id="info" class="info">
+      <h2 class="container-title info-title">öffnungszeiten</h2>
+      <div class="week">
+        <p class="day">Mo.</p>
+        <p class="time">Ruhetag</p>
+        <p class="day">Di.</p>
+        <p class="time">11:00-23:00</p>
+        <p class="day">Mi.</p>
+        <p class="time">11:00-23:00</p>
+        <p class="day">Do.</p>
+        <p class="time">11:00-23:00</p>
+        <p class="day">Fr.</p>
+        <p class="time">11:00-23:00</p>
+        <p class="day">Sa.</p>
+        <p class="time">11:00-23:00</p>
+        <p class="day">So.</p>
+        <p class="time">11:00-23:00</p>
+      </div>
+    </section>
+    <section class="kontakt container">
+      <div class="kontakt-daten">
+        <img
+          src="contact.jpg"
+          alt="Geb. Feier in unserem Lokal"
+          class="kontakt-image"
+        />
+
+        <div class="kontakt-data">
+          <h2 class="container-title">kontakt</h2>
+          <p class="kontakt-info">(0)123456789</p>
+          <p class="kontakt-info">info@beispiel.de</p>
+          <p class="kontakt-info">beispielstr. 1</p>
+          <p class="kontakt-info">1337 Beispieldorf</p>
+          <div class="kontakt-button">
+            <a href="" class="button">Jetzt anrufen</a>
+            <a href="" class="reverse-button">Email schreiben</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-link">
+        <a href="" class="footer-item">Impressum</a
+        ><a href="" class="footer-item">datenschutzerklärung</a
+        ><a href="" class="footer-item">Jobs</a>
+      </div>
+      <p class="copyright">&copy; 2026 Lintner Andre</p>
+    </footer>
   </body>
 </html>
