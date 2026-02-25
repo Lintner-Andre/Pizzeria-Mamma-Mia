@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: #272727;
+  color: #fff;
+
+  --primary-color: #fc0000;
+  --text-color: #ddd;
+}
+
+.navbar,
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-item,
+.footer-item {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover,
+.footer-item:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.hero-subtitle {
+  color: var(--text-color);
+}
+
+.hero-button {
+  margin-top: 3.5rem;
+}
+
+.button,
+.reverse-button {
+  width: fit-content;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.reverse-button {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.reverse-button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.container-title {
+  width: fit-content;
+  border-bottom: 1px solid var(--primary-color);
+  margin: 2rem 0 1.5rem 0;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.about {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.text {
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.about-button {
+  margin-top: 2rem;
+}
+
+.about-images {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-image-large {
+  min-width: 50%;
+}
+
+.about-images-small {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.info {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(info.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.info-title {
+  border-width: 60%;
+  text-align: center;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.kontakt-daten {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kontakt .container-title {
+  margin-top: 0;
+}
+
+.kontakt-info {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+.kontakt-image {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.kontakt-button {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #303030;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .button,
+  .reverse-button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .navbar,
+  .footer-link {
+    gap: 2rem;
+  }
+
+  .nav-item,
+  .footer-item {
+    font-size: 1.2rem;
+  }
+
+  .container-title {
+    font-size: 2.8rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .kontakt .container-title {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .kontakt-daten {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kontakt-info {
+    font-size: 1.2rem;
+  }
+
+  .kontakt-image {
+    width: 60%;
+  }
+
+  .footer-link {
+    margin-top: 1.8rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .button,
+  .reverse-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar,
+  .footer-link {
+    gap: 2.5rem;
+  }
+
+  .nav-item,
+  .footer-item {
+    font-size: 1.3rem;
+  }
+
+  .container-title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    align-items: center;
+  }
+
+  .about-images,
+  .about-images-small {
+    gap: 0.8rem;
+  }
+
+  .info {
+    height: 50%;
+  }
+
+  .week {
+    font-size: 1.2rem;
+  }
+
+  .kontakt .container-title {
+    margin-bottom: 2rem;
+  }
+
+  .kontakt-info {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .kontakt-button {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .kontakt-image {
+    width: 50%;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
+
+  .footer-link {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
